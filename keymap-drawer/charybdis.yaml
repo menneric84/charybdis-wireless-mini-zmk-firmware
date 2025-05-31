@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - DEV TOOLS
@@ -18,7 +19,7 @@ layers:
   - {t: D, h: LCTRL}
   - {t: F, h: LEFT SHIFT}
   - G
-  - H
+  - ZMK Studio
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
