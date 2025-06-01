@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
-  - DEV TOOLS
+  - {t: ▽, type: trans}
   - Q
   - W
   - E
@@ -12,36 +12,36 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_PHOTO L_GAME
-  - {t: TAB, h: LCMD}
-  - {t: A, h: SYM}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: A, h: LEFT SHIFT}
+  - S
+  - D
+  - {t: F, h: LEFT CONTROL}
   - G
   - ZMK Studio
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RCMD}
-  - DEL
-  - SEARCH
+  - {t: J, h: RIGHT CONTROL}
+  - K
+  - L
+  - {t: ;, h: RIGHT CONTROL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
+  - X
+  - C
   - V
   - B
   - N
   - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
-  - ~/
-  - CLIP HIST
+  - ','
+  - .
+  - '?'
+  - {t: ▽, type: trans}
   - SCRL SLOW
-  - L CLK
-  - '&td_bs'
-  - {t: RETURN, h: MOUSE}
-  - '&td_space'
+  - {t: SPACE, h: NAV}
+  - {t: BACK SPACE, h: SYM}
+  - {t: TAB, h: NAV}
+  - {t: ENTER, h: NUM}
   NUM:
   - {t: ▽, type: trans}
   - ''
@@ -83,7 +83,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - .
-  - '0'
+  - {t: '0', type: held}
   NAV:
   - ''
   - ''
@@ -100,9 +100,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
+  - ZMK Studio
+  - L CLK
+  - R CLK
   - HSPLIT
   - LEFT
   - DOWN
@@ -122,7 +122,7 @@ layers:
   - END
   - ''
   - ''
-  - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,7 +140,7 @@ layers:
   - '&td_grave'
   - '!'
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -165,7 +165,7 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   GAME:
@@ -334,7 +334,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RETURN, type: held}
+  - RETURN
   - {t: ▽, type: trans}
   SLOW:
   - {t: ▽, type: trans}
