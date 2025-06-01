@@ -19,7 +19,7 @@ layers:
   - D
   - {t: F, h: LEFT CONTROL}
   - G
-  - ZMK Studio
+  - H
   - {t: J, h: RIGHT CONTROL}
   - K
   - L
@@ -44,40 +44,40 @@ layers:
   - {t: ENTER, h: NUM}
   NUM:
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - LCTRL
   - '*'
-  - {t: '7', h: F7}
-  - {t: '8', h: F8}
-  - {t: '9', h: F9}
-  - F10
+  - (
+  - Sft+ )
+  - Sft+ )
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '-'
-  - {t: '4', h: F4}
-  - {t: '5', h: F5}
-  - {t: '6', h: F6}
-  - {t: +, h: F11}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
-  - ''
-  - BACK SPACE
-  - SPACE
   - '='
-  - {t: '1', h: F1}
-  - {t: '2', h: F2}
-  - {t: '3', h: F3}
-  - {t: /, h: DEV TOOLS}
+  - '-'
+  - '['
+  - ']'
+  - ''''
+  - \
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -91,11 +91,11 @@ layers:
   - ''
   - ''
   - ''
-  - '&detach_session'
-  - '&create_or_attach'
-  - '&next_pane'
-  - '&show_sessions'
-  - '&sync_panes'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -103,11 +103,11 @@ layers:
   - ZMK Studio
   - L CLK
   - R CLK
-  - HSPLIT
   - LEFT
-  - DOWN
-  - UP
+  - DOWN ARROW
+  - UP ARROW
   - RIGHT
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -115,7 +115,7 @@ layers:
   - ''
   - ''
   - ''
-  - VSPLIT
+  - LEFT WIN
   - HOME
   - PG DN
   - PG UP
