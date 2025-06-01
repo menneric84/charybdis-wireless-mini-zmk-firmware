@@ -93,28 +93,28 @@
 
         BASE {
             bindings = <
-&trans  &kp Q             &kp W  &kp E       &kp R               &kp T              &kp Y           &kp U                &kp I      &kp O       &kp P                   &trans
-&trans  &mt LEFT_SHIFT A  &kp S  &kp D       &mt LEFT_CONTROL F  &kp G              &studio_unlock  &mt RIGHT_CONTROL J  &kp K      &kp L       &mt RIGHT_CONTROL SEMI  &trans
-&trans  &kp Z             &kp X  &kp C       &kp V               &kp B              &kp N           &kp M                &kp COMMA  &kp PERIOD  &kp QUESTION            &trans
-                                 &td_cursor  &lt 2 SPACE         &lt 3 BACKSPACE    &lt 2 TAB       &lt 1 ENTER
+&trans  &kp Q             &kp W  &kp E       &kp R               &kp T              &kp Y      &kp U                &kp I      &kp O       &kp P                   &trans
+&trans  &mt LEFT_SHIFT A  &kp S  &kp D       &mt LEFT_CONTROL F  &kp G              &kp H      &mt RIGHT_CONTROL J  &kp K      &kp L       &mt RIGHT_CONTROL SEMI  &trans
+&trans  &kp Z             &kp X  &kp C       &kp V               &kp B              &kp N      &kp M                &kp COMMA  &kp PERIOD  &kp QUESTION            &trans
+                                 &td_cursor  &lt 2 SPACE         &lt 3 BACKSPACE    &lt 2 TAB  &lt 1 ENTER
             >;
         };
 
         NUM {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5       &kp N6      &kp N7     &kp N8     &kp N9     &kp N0         &none
-&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5       &kp N6      &kp N7     &kp N8     &kp N9     &kp N0         &trans
-&none   &none   &none   &none   &kp BACKSPACE  &kp SPACE    &td_equals  &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 SLASH  &none
-                        &none   &none          &trans       &kp DOT     &kp N0
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp LCTRL  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LS(RIGHT_PARENTHESIS)  &kp LS(RPAR)  &none
+&trans  &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp N6     &kp N7        &kp N8                &kp N9                     &kp N0        &trans
+&none   &kp EQUAL        &kp MINUS    &kp LBKT   &kp RBKT    &kp APOS       &kp BSLH   &kp GRAVE     &trans                &trans                     &trans        &none
+                                      &none      &none       &trans         &kp DOT    &kp N0
             >;
         };
 
         NAV {
             bindings = <
-&none   &none   &none   &none           &none      &none        &detach_session  &create_or_attach  &next_pane  &show_sessions  &sync_panes      &none
-&trans  &trans  &trans  &studio_unlock  &mkp LCLK  &mkp RCLK    &h_split         &kp LEFT_ARROW     &kp DOWN    &kp UP          &kp RIGHT_ARROW  &none
-&none   &none   &none   &none           &none      &none        &v_split         &kp HOME           &kp PG_DN   &kp PG_UP       &kp END          &none
-                        &none           &none      &trans       &trans           &trans
+&none   &none   &none   &none           &none      &none        &trans          &trans          &trans        &trans     &trans   &none
+&trans  &trans  &trans  &studio_unlock  &mkp LCLK  &mkp RCLK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans   &none
+&none   &none   &none   &none           &none      &none        &kp LEFT_WIN    &kp HOME        &kp PG_DN     &kp PG_UP  &kp END  &none
+                        &none           &none      &trans       &trans          &trans
             >;
         };
 
