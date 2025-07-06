@@ -3,10 +3,10 @@
 / {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Charybdis 3x6";
+        display-name = "Charybdis 3x5";
 
         kscan = <&kscan0>;
-        transform = <&default_transform>;
+        transform = <&five_column_transform>;
 
         keys
             // Left Half - Main Keys
