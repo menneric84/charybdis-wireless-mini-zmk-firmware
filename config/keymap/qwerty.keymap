@@ -39,14 +39,12 @@
             bindings = <
 // ╭───────────────┬────────────────┬────────────────┬─────────────────┬─────────────────┬──────╮  ╭──────┬──────────────────┬──────────────────┬─────────────────┬────────────────────────┬─────────────╮
     &trans          &trans           &trans           &trans            &trans            &trans     &trans  &trans             &trans             &trans            &trans                   &trans
-    &kp C_AC_SEARCH &kp Q            &kp W            &kp E             &kp R             &kp T     &kp Y  &kp U              &kp I              &kp O             &kp P                     &td_layers
-// ├───────────────┼────────────────┼────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┼─────────────────┼────────────────────────┼─────────────┤
-    &kp TAB         &ht_left LCMD A  &ht_left LALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G     &kp H  &ht_right RCTRL J  &ht_right RSHFT K  &ht_right LALT L  &ht_right RCMD SEMICOLON  &kp DEL
-// ├───────────────┼────────────────┼────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┼─────────────────┼────────────────────────┼─────────────┤
-    &clip_hist      &kp Z            &kp X            &kp C             &kp V             &kp B     &kp N  &kp M              &mm_cm_sc          &mm_pr_col        &mm_qm_ex                 &kp FSLH
+&kp TAB         &kp Q            &kp W         &kp E        &kp R     &kp T                      &kp Y         &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&kp ESCAPE      &kp A            &kp S         &kp D        &kp F     &kp G                      &kp H         &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_GUI    &kp Z            &kp X         &kp C        &kp V     &kp B                      &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp EQUAL
 // 4th main row to align with 4x6 layout
 // ╰───────────────┴────────────────┴────────────────┼─────────────────┼─────────────────┼──────┤  ├──────┼──────────────────┼──────────────────┴─────────────────┴────────────────────────┴─────────────╯
-           &kp X            &kp C             &kp V                                                  &td_esc_scrl_slow   &td_clk  &td_bs     &kp ENTER  &td_space_nav
+           &lt 3 ESCAPE  &lt 2 SPACE  &kp BSPC      &mkp LCLK  &mkp RCLK                     &kp LEFT_SHIFT  &lt 1 RETURN &mkp LCLK 
                                                          // ╰──────────────────┴─────────┴──────╯  ╰──────────┴──────────────╯
             >;
         };
@@ -55,9 +53,9 @@
             display-name = "Num";
             bindings = <
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)              &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &sys_reset
+&trans  &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                        &kp N6            &kp N7            &kp N8            &kp N9            &kp N0            &trans
+&trans  &kp N6            &kp N7            &kp N8            &kp N9            &kp N0                        &trans            &trans            &trans            &trans            &trans            &out OUT_BLE
                               &trans    &trans    &trans    &trans    &trans &trans    &trans    &trans
             >;
         };
@@ -65,7 +63,7 @@
         NAV {
             display-name = "Nav";
             bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bootloader              &trans          &trans          &trans        &trans     &trans                &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
