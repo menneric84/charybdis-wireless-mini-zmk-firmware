@@ -72,14 +72,15 @@
             , <&key_physical_attrs 100 100 1400  300       0     0     0>
 
             // Row 4 (Thumbs) - Left (5) then Right (3)
-            , <&key_physical_attrs 100 100  248  314       0     0     0>
-            , <&key_physical_attrs 100 100  448  314       0     0     0>
-            , <&key_physical_attrs 100 100  348  314       0     0     0>
-            , <&key_physical_attrs 100 100  348  314    1500   398   790>
-            , <&key_physical_attrs 100 100  348  320    3000   398   790>
-            , <&key_physical_attrs 100 100 1052  320 (-3000)  1102   790>
-            , <&key_physical_attrs 100 100 1052  314 (-1500)  1102   790>
-            , <&key_physical_attrs 100 100 1152  314       0     0     0>
+            // Move thumbs below bottom row to avoid overlap
+            , <&key_physical_attrs 100 100  248  430       0     0     0>
+            , <&key_physical_attrs 100 100  448  430       0     0     0>
+            , <&key_physical_attrs 100 100  348  430       0     0     0>
+            , <&key_physical_attrs 100 100  320  460    1500   398   790>
+            , <&key_physical_attrs 100 100  380  468    3000   398   790>
+            , <&key_physical_attrs 100 100 1052  436 (-3000)  1102   790>
+            , <&key_physical_attrs 100 100 1052  430 (-1500)  1102   790>
+            , <&key_physical_attrs 100 100 1152  430       0     0     0>
             ;
     };
 };
