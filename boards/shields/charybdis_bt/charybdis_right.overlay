@@ -31,10 +31,6 @@
 		, <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
-
-	// Debounce to mitigate chatter
-	debounce-press-ms = <8>;
-	debounce-release-ms = <8>;
 };
 
 /* enable the listener on central */
