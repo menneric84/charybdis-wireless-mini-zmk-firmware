@@ -1,6 +1,6 @@
 {
-    "id": "wireless_mini",
-    "name": "wireless mini",
+    "id": "charybdis",
+    "name": "Charybdis",
     "layouts": {
       "default_transform": {
         "name": "default_transform",
