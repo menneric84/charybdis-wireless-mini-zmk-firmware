@@ -56,11 +56,14 @@
            fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
            thus, the sensor would be a `wakeup-source` */
 
-        /* force-awake-4ms-mode removed: forces 250Hz sampling, which the driver
-           comment itself flags as only needed for direct USB. On BLE the connection
-           interval is 15-30ms (~50Hz max throughput), so 250Hz generates excess SPI
-           traffic and increases the risk of corruption during REST state transitions
-           on the SuperMini's less stable power rail. Default 8ms (125Hz) is used. */
+        force-awake-4ms-mode;
+        /* Required for force-awake to function: keeps the sensor's internal motion
+           timer from expiring by forcing 4ms (250Hz) sampling while ZMK is ACTIVE.
+           Without this, the RUN_DOWNSHIFT timer still fires and the sensor enters
+           REST1 after 3264ms regardless of the force-awake flag.
+           NOTE: the driver comment says "if you need 250Hz with direct USB" but the
+           4ms mode is mechanically necessary here — the SPI bus is local to the board
+           and the nRF52840 handles BLE throttling independently. */
     };
 };
 
