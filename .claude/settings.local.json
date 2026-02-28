@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/Users/menne/src/charybdis-wireless-mini-zmk-firmware log --oneline)",
+      "Bash(gh api repos/zmkfirmware/zmk/releases --jq '.[0:5] | .[] | \"\"\\\\\\(.tag_name\\) - \\\\\\(.published_at\\) - \\\\\\(.name\\)\"\"')",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
