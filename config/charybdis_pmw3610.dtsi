@@ -56,10 +56,11 @@
            fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
            thus, the sensor would be a `wakeup-source` */
 
-        force-awake-4ms-mode;
-        /* while force-awake is acitvated, enable this mode to force sampling per 
-           4ms, where the default sampling rate is 8ms. */
-        /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
+        /* force-awake-4ms-mode removed: forces 250Hz sampling, which the driver
+           comment itself flags as only needed for direct USB. On BLE the connection
+           interval is 15-30ms (~50Hz max throughput), so 250Hz generates excess SPI
+           traffic and increases the risk of corruption during REST state transitions
+           on the SuperMini's less stable power rail. Default 8ms (125Hz) is used. */
     };
 };
 
