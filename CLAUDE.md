@@ -77,7 +77,7 @@ The SuperMini is Pro Micro-compatible and all GPIO aliases map correctly, but ha
 | Power ramp speed | Slower | Faster |
 
 **Applied workarounds** (see `config/charybdis.conf` and `config/charybdis_right.conf`):
-- `CONFIG_BOARD_ENABLE_DCDC_HV=n` — disables the HV boost converter to prevent SPI voltage instability that corrupts PMW3610 initialization (`SOC_DCDC_NRF52X_HV` is the indirect symbol; `BOARD_ENABLE_DCDC_HV` is the correct user-configurable parent in Zephyr 3.5)
+- `CONFIG_BOARD_ENABLE_DCDC_HV=n` (**right half only**, in `charybdis_right.conf`) — disables the HV boost converter to prevent SPI voltage instability that corrupts PMW3610 initialization. Kept off the left half because disabling DC/DC there forces it onto the LDO, which on some SuperMini clones cannot sustain BLE radio current, causing a silent brownout on boot. (`SOC_DCDC_NRF52X_HV` is the indirect symbol; `BOARD_ENABLE_DCDC_HV` is the correct user-configurable parent in Zephyr 3.5)
 - `CONFIG_PMW3610_INIT_POWER_UP_EXTRA_DELAY_MS=1000` — increased from 300ms to give the SuperMini's slower power rail time to stabilize before the driver checks the sensor product ID
 - `CONFIG_PMW3610_RUN_DOWNSHIFT_TIME_MS=3264` — set to the driver's maximum (Kconfig range `[13, 3264]` ms) to reduce REST mode cycling; higher values are clamped by the driver
 
